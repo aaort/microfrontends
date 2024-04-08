@@ -9,7 +9,8 @@ export default defineConfig({
     federation({
       name: "web",
       remotes: {
-        components: "http://localhost:5001/assets/remoteEntry.js",
+        components:
+          "https://microfrontends-components-40n7usmsp-aaorts-projects.vercel.app/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom"],
     }),
