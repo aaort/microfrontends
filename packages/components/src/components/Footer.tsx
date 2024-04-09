@@ -6,6 +6,7 @@ function Footer(props: ComponentProps<"footer">) {
   return (
     <footer
       style={{
+        width: "100%",
         backgroundColor: "#334155",
         paddingBlock: "1rem",
         display: "flex",
