@@ -4,12 +4,17 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 //@ts-expect-error Cannot find module
 import Button from "components/Button";
+//@ts-expect-error Cannot find module
+import Header from "components/Header";
+//@ts-expect-error Cannot find module
+import Footer from "components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <Header>This is the header</Header>
       <Button style={{ backgroundColor: "red" }}>Click me</Button>
 
       <div>
@@ -32,6 +37,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+
+      <Footer>This is the footer</Footer>
     </>
   );
 }
