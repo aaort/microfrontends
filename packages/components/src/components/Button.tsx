@@ -3,6 +3,7 @@ import { ComponentProps } from "react";
 function Button(props: ComponentProps<"button">) {
   return (
     <button
+      {...props}
       style={{
         backgroundColor: "#404040",
         borderRadius: 0,
@@ -12,7 +13,6 @@ function Button(props: ComponentProps<"button">) {
         paddingInline: "15px",
         paddingBlock: "10px",
       }}
-      {...props}
     />
   );
 }
