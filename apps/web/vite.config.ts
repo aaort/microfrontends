@@ -9,8 +9,12 @@ export default defineConfig({
     federation({
       name: "web",
       remotes: {
-        components:
-          "https://microfrontends-components-40n7usmsp-aaorts-projects.vercel.app/assets/remoteEntry.js",
+        components: `await fetch('https://microfrontends-components-40n7usmsp-aaorts-projects.vercel.app/assets/remoteEntry.js', { headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+            "Access-Control-Allow-Headers":
+              "X-Requested-With, content-type, Authorization",
+          },})`,
       },
       shared: ["react", "react-dom"],
     }),
