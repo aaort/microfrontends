@@ -5,7 +5,12 @@ function Header(props: ComponentProps<"header">) {
 
   return (
     <header
-      style={{ backgroundColor: "#475569", paddingBlock: "1rem", ...style }}
+      style={{
+        width: "100%",
+        backgroundColor: "#475569",
+        paddingBlock: "1rem",
+        ...style,
+      }}
       {...rest}
     />
   );
