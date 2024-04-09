@@ -1,9 +1,11 @@
 import { ComponentProps } from "react";
 
 function Button(props: ComponentProps<"button">) {
+  const { style, ...rest } = props;
+
   return (
     <button
-      {...props}
+      {...rest}
       style={{
         backgroundColor: "#404040",
         borderRadius: 0,
@@ -12,6 +14,7 @@ function Button(props: ComponentProps<"button">) {
         borderStyle: "dashed",
         paddingInline: "15px",
         paddingBlock: "10px",
+        ...style,
       }}
     />
   );
