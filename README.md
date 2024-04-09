@@ -1,4 +1,4 @@
-# React + Vite project following the micro-frontends architecture
+# Micro-frontends with React + Vite
 
 This monorepo aims to demonstrate how one can approach implementing **React** and **Vite** project following [micro-frontends](https://micro-frontends.org/) architecture.
 
