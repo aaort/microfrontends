@@ -9,23 +9,20 @@ import Header from "components/Header";
 //@ts-expect-error Cannot find module
 import Footer from "components/Footer";
 
-/**
- *
- * @returns {JSX.Element}
- */
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
       <Header>This is the header </Header>
-      <Button onClick={() => alert("hello")}>Click me</Button>
+      <Button onClick={() => console.log("hello")}>Click me</Button>
 
       <div className="container">
         <div>
           <a href="https://vitejs.dev" target="_blank">
             <img src={viteLogo} className="logo" alt="Vite logo" />
           </a>
+
           <a href="https://react.dev" target="_blank">
             <img src={reactLogo} className="logo react" alt="React logo" />
           </a>
