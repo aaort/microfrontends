@@ -1,7 +1,7 @@
 import { useState } from "react";
+import "./App.css";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./App.css";
 //@ts-expect-error Cannot find module
 import Button from "components/Button";
 //@ts-expect-error Cannot find module
@@ -9,12 +9,16 @@ import Header from "components/Header";
 //@ts-expect-error Cannot find module
 import Footer from "components/Footer";
 
+/**
+ *
+ * @returns {JSX.Element}
+ */
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Header>This is the header</Header>
+      <Header>This is the header </Header>
       <Button onClick={() => alert("hello")}>Click me</Button>
 
       <div className="container">
