@@ -9,6 +9,7 @@ function Header(props: ComponentProps<"header">) {
         width: "100%",
         backgroundColor: "#475569",
         paddingBlock: "1rem",
+        borderRadius: 15,
         ...style,
       }}
       {...rest}
