@@ -16,5 +16,6 @@ module.exports = {
       { allowConstantExport: true },
     ],
     "import/no-unresolved": 0,
+    "no-alert": 0,
   },
 };

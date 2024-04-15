@@ -14,14 +14,17 @@ function App() {
 
   return (
     <>
-      <Header>This is the header </Header>
-      <Button onClick={() => console.log("hello")}>Click me</Button>
+      <Header>This is a remote header component</Header>
 
       <div className="container">
         <div>
           <a href="https://vitejs.dev" target="_blank">
             <img src={viteLogo} className="logo" alt="Vite logo" />
           </a>
+
+          <Button onClick={() => alert("This is a remote button component")}>
+            Click me
+          </Button>
 
           <a href="https://react.dev" target="_blank">
             <img src={reactLogo} className="logo react" alt="React logo" />
@@ -41,7 +44,7 @@ function App() {
         </p>
       </div>
 
-      <Footer>This is the footer</Footer>
+      <Footer>This is a remote footer component</Footer>
     </>
   );
 }
