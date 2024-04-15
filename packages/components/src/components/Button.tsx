@@ -8,7 +8,7 @@ function Button(props: ComponentProps<"button">) {
       {...rest}
       style={{
         borderWidth: 1,
-        borderRadius: 15,
+        borderRadius: 10,
         paddingBlock: "10px",
         backgroundColor: "#404040",
         ...style,
